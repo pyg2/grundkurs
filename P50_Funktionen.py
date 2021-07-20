@@ -101,6 +101,7 @@ def get_ergebnis_addition_und_subtraktion2(zahl1, zahl2):
     return {
         'addition': (zahl1 + zahl2),
         'subtraktion': (zahl1 - zahl2),
+        'division': (zahl1 / zahl2)
     }
 
 
