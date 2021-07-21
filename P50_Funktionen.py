@@ -110,3 +110,34 @@ ergebnis2 = get_ergebnis_addition_und_subtraktion2(20, 22)
 
 print(ergebnis2['addition'])
 print(ergebnis2['subtraktion'])
+
+# Globale Variablen
+ergebnis_addition = 0
+ergebnis_subtraktion = 0
+
+
+def get_ergebnis_addition_und_subtraktion3(zahl1, zahl2):
+    # Lokale Variablen
+    global ergebnis_addition, ergebnis_subtraktion
+    ergebnis_addition = zahl1 + zahl2
+    ergebnis_subtraktion = zahl1 - zahl2
+
+
+get_ergebnis_addition_und_subtraktion3(20, 22)
+
+print(ergebnis_addition)
+print(ergebnis_subtraktion)
+
+
+global_zahl = 42
+
+
+def global_test():
+    # global global_zahl
+    print(global_zahl)
+    # global_zahl = 23
+
+
+global_test()
+
+
